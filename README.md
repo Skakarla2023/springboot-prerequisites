@@ -223,5 +223,5 @@ If Spring Boot ever feels overwhelming, return here and strengthen the basics ag
 
 ---
 
-<h2 align="center"><b>Happy learning.</b></h2>
+<h2 align="center"><b>Happy learning❤️</b></h2>
 <h2 align="center"><b>Strong foundations lead to confident engineering.</b></h2>
