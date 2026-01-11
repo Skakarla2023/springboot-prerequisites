@@ -1,0 +1,1 @@
+The primary purpose of constructor chaining is to avoid duplicating initialization logic across multiple constructors. Instead, common setup code is centralized in one constructor, which is then called by others
