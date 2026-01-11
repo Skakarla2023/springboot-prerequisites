@@ -73,28 +73,92 @@ Most importantly, you will understand **how all these concepts connect inside Sp
 springboot-prerequisites/
 │
 ├── 00-how-to-use-this-repo/
+│   ├── learning-order.md
+│   ├── how-this-connects-to-spring.md
 │
 ├── 01-java-fundamentals/
+│   ├── classes-and-objects
+│   ├── constructors
+│   ├── access-modifiers
+│   ├── static-final-keyword
+│
 ├── 02-oops-concepts/
+│   ├── inheritance
+│   ├── polymorphism
+│   ├── abstraction
+│   ├── encapsulation
+│   ├── interface-vs-abstract-class
+│
 ├── 03-exception-handling/
+│   ├── try-catch-finally
+│   ├── checked-vs-unchecked
+│   ├── custom-exceptions
+│
 ├── 04-collections-framework/
+│   ├── list-set-map
+│   ├── arraylist-vs-linkedlist
+│   ├── hashmap-internals
+│
 ├── 05-java-memory-model/
+│   ├── stack-vs-heap
+│   ├── garbage-collection
 │
 ├── 06-database-and-sql-basics/
+│   ├── what-is-database
+│   ├── sql-crud-queries
+│   ├── primary-foreign-keys
+│
 ├── 07-jdbc/
+│   ├── what-is-jdbc
+│   ├── jdbc-architecture
+│   ├── jdbc-crud-example
+│   ├── problems-with-jdbc
 │
 ├── 08-maven/
+│   ├── what-is-maven
+│   ├── pom-xml-explained
+│   ├── dependency-scope
+│   ├── maven-vs-gradle
 │
 ├── 09-xml/
+│   ├── what-is-xml
+│   ├── xml-structure
+│   ├── xml-vs-annotations
+│   ├── xml-in-spring
+│
 ├── 10-json/
+│   ├── what-is-json
+│   ├── json-structure
+│   ├── json-vs-xml
+│   ├── json-in-rest-apis
 │
 ├── 11-hibernate/
+│   ├── what-is-orm
+│   ├── hibernate-vs-jdbc
+│   ├── entity-mapping
+│   ├── hibernate-crud
+│   ├── common-hibernate-errors
+│
 ├── 12-jpa/
+│   ├── what-is-jpa
+│   ├── jpa-vs-hibernate
+│   ├── entity-annotations
+│   ├── persistence-context
+│
 ├── 13-spring-data-jpa/
+│   ├── why-spring-data-jpa
+│   ├── repository-pattern
+│   ├── crudrepository-jparepository
+│   ├── derived-query-methods
 │
 ├── 14-layered-architecture/
+│   ├── controller-service-repository
+│   ├── separation-of-concerns
 │
 ├── 15-mini-backend-projects/
+│   ├── jdbc-console-app
+│   ├── hibernate-crud-app
+│   ├── jpa-based-backend
 │
 └── README.md
 ```
