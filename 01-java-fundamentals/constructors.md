@@ -195,7 +195,30 @@ Hello to my future me
 This is a keyconcept in OOPS, it is used to create multiple constructors of the same class with different parameters.
 
 ```java
-
+class Main{
+    Main(int no){
+        System.out.println("Constructor with one parameter(int): "+no);
+    }
+    Main(String name, int no){
+        System.out.println("Constructor with two parameters(String,int): "+name+" "+no);
+    }
+    Main(){
+        System.out.println("Constructor with no parameters");
+    }
+    public static void main(String[] args){
+        
+        System.out.println("Implementation of Parametrized constructors:");
+        
+        // constructor 1
+        Main obj1 = new Main();
+      
+        // constructor 2  
+        Main obj2 = new Main(24);
+        
+        // constructor 3   
+        Main obj3 = new Main("Priya",12);
+    }
+}
 ```
 
 ## Constructor Chaining
