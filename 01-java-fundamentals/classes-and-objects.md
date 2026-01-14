@@ -1,7 +1,7 @@
 <h2 align="center"><b>Class and Object in Java</b></h2>
 
 ## Object
-
+  
 - An Objects is a real world entity used in programming.
 - It has 2 characteristics:
   - data
