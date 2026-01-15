@@ -224,4 +224,138 @@ class Main{
 ## Constructor Chaining
 
 - Constructor chaining refers to calling one constructor inside another constructor.
-- The primary purpose of constructor chaining is to avoid duplicating initialization logic across multiple constructors. Instead, common setup code is centralized in one constructor, which is then called by others      
+- Constructor Chaining is a mechanism in Java where one constructor calls another constructor either within the same class using `this` or from the parent class using `super`.
+- The primary purpose of constructor chaining is reuse initialization code and reducing redundancy.
+- The constructor call must always be the **first** statement inside the constructor.
+
+#### Simple rule to remember:
+```
+one constructor passes the responsibility to another before finishing its job.
+```
+
+### Without constructor chaining:
+
+- Code gets repeated
+- Initialization logic becomes messy
+- Harder to maintain and debug
+
+### With constructor chaining:
+
+- Common initialization code stays in one place
+- Cleaner, readable, and professional code
+- Ensures proper order of object creation
+
+It keeps constructors connected instead of isolated.
+
+> Write once, reuse everywhere, initialize correctly
+
+- Observe the following codes for better understanding:
+
+### 1️ Student Profile (Same Class – this() chaining)
+
+```java
+class Student {
+    String name;
+    int no;
+    String college;
+    
+    Student(){
+        college = "ABC Engineering College";
+        System.out.println("College set");
+    }
+    
+    Student(String name){
+        this();
+        this.name = name;
+        System.out.println("Name set");
+    }
+    
+    Student(String name,int no){
+        this(name);
+        this.no = no;
+        System.out.println("Number set");
+    }
+    
+    public static void main(String[] main){
+        Student s = new Student("Rahul",100);
+    }
+}
+```
+
+Output:
+
+```
+College set
+Name set
+Number set
+```
+
+### 2️ Bank Account (Mandatory account number first)
+
+An account must have an account number before balance or services.
+
+```java
+class BankAccount {
+    int AccountNumber;
+    double balance;
+    
+    BankAccount(int AccountNumber){
+        this.AccountNumber = AccountNumber;
+        System.out.println("Account created");
+    }
+    
+    BankAccount(int AccountNumber,double balance){
+        this(AccountNumber);
+        this.balance = balance;
+        System.out.println("Balance added");
+    }
+    
+    public static void main(String[] args){
+        BankAccount b = new BankAccount(314563,3236.7456);
+    }
+}
+```
+
+Output:
+
+```
+Account created
+Balance added
+```
+
+> Mandatory data initialized first using constructor chaining.
+
+**super() chaining**:
+
+```java
+class Vehicle {
+    String  fuelType;
+
+    Vehicle(){
+        fuelType = "Petrol";
+        System.out.println("Vehicle fuel type set");
+    }
+}
+
+class Car extends Vehicle{
+    String brand;
+
+    Car(){
+        super();
+        brand = "Toyota";
+        System.out.println("Car brand set");
+    }
+
+    public static void main(String[] args){
+        Car c = new Car();
+    }
+}
+```
+
+Output:
+
+```
+Vehicle fuel type set
+Car brand set
+```
+
