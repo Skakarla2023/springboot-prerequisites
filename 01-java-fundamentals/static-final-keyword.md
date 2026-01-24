@@ -1,5 +1,7 @@
 <h2 align="center"><b>static and final keywords</b></h2>
 
+## static keyword
+
 - static means it belongs to the class, not the object.
 - Usually when Java creates an object, it has its own copy of variables and methods, but when something is `static`,only one copy of it exists and it is shared by **everyone**.
 
@@ -146,4 +148,112 @@ public class OuterClass {
 Output:
 ```
 Static outer field:10
+```
+
+## final keyword
+
+- final keyword is a non-access modifier keyword used in Java to restrict modifications of variables, methods and classes.
+- It is used to ensure immutability, security and consistent behavior code in code.
+
+### Why do we need final?
+
+We need final to:
+
+- Protect important values from changing
+- Prevent accidental modification
+- Control inheritance and method overriding
+- Make programs safer and more predictable
+
+final keyword i used with:
+1. variables
+2. methods
+3. classes
+
+### `final` variable
+
+- A final variable can be assigned only once.
+- It's value cannot be changed once assigned.
+
+```java
+class Main{
+    public static void main(String[] args){
+        final int a = 10;
+        a = 20;
+    }
+}
+```
+
+Output:
+```
+ERROR!
+/tmp/waZyv7z3Vz/Main.java:4: error: cannot assign a value to final variable a
+        a = 20;
+        ^
+1 error
+ERROR!
+error: compilation failed
+```
+
+We use final varibable to :
+- store constants.
+- prevent accidental modifications.
+
+### final methods
+
+- A final method cannot be overriden by its child class method.
+- Method overloading is possible with final methods, but method overriding is not possible.
+
+```java
+class Parent {
+    public final void display(int num){
+        System.out.println("Value: "+num);
+    }
+    public final void display(String name){
+        System.out.println("Name: "+name);
+    }
+    public static void main(String[] main){
+        Parent obj = new Parent();
+        obj.display(10);
+        obj.display("Luna");
+    }
+}
+```
+
+Output:
+```
+Value: 10
+Name: Luna
+```
+
+Let's observe method overriding with `final` methods in Java.
+
+```java
+class Child extends Parent{
+    public static void main(String[] main){
+        Parent obj = new Parent();
+        obj.display(10);
+    }
+    public final void display(int num){
+        num++;
+        System.out.println("Value:"+num);
+    }
+}
+class Parent {
+    public final void display(int num){
+        System.out.println("Value: "+num);
+    }
+}
+```
+
+
+Output:
+```
+ERROR!
+/tmp/uFkYccLmsa/Main.java:6: error: display(int) in Child cannot override display(int) in Parent
+    public final void display(int num){
+                      ^
+  overridden method is final
+1 error
+ERROR!
+error: compilation failed
 ```
