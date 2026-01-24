@@ -257,3 +257,17 @@ ERROR!
 ERROR!
 error: compilation failed
 ```
+
+### final with classes
+
+- A final class cannot be inherited.
+-  It serves as the end of an inheritance hierarchy, preventing any modification or extension of its functionality through inheritance.
+
+```java
+
+```
+
+Output:
+```
+
+```
