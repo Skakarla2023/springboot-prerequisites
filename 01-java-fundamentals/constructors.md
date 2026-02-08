@@ -131,7 +131,7 @@ Number : 10
 ### Private Constructor
 
 Private Constructor is not accessible from outside the class, it is commonly used :
-  - In SingleTon classes i.e., onyl one instance of a class can be created.
+  - In SingleTon classes i.e., only one instance of a class can be created.
   - Prevent instantiation of classes containing only static methods are used.
 
 ```java
