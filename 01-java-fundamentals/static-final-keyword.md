@@ -264,10 +264,23 @@ error: compilation failed
 -  It serves as the end of an inheritance hierarchy, preventing any modification or extension of its functionality through inheritance.
 
 ```java
-
+final class FinalExample {
+    static void getMessage(){
+        System.out.println("Hello from Hyderabad");
+    }
+}
+class Junior extends FinalExample {
+    int a = 10;
+}
 ```
 
 Output:
 ```
-
+ERROR!
+/tmp/qqszYMtsVx/Main.java:6: error: cannot inherit from final FinalExample
+class Junior extends FinalExample {
+                     ^
+1 error
+ERROR!
+error: compilation failed
 ```
