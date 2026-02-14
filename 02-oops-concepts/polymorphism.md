@@ -44,3 +44,10 @@ class ShoppingCart{
 }
 ```
 
+**Output:**
+
+```
+Bill: 500.0
+Bill: 600.0
+Bill: 500.0
+```
