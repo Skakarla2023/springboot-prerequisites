@@ -1,4 +1,4 @@
-<h3 align="center"><b>try catch finally in Java</b></h3>
+<h2 align="center"><b>try catch finally in Java</b></h3>
 
 - An **exception** in Java is an event that occurs during the execution of a program that disrupts its normal flow.
 
