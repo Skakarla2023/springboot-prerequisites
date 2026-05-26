@@ -92,6 +92,14 @@ CREATE TABLE Courses (
 );
 ```
 
+### Why Foreign Keys are important?
+
+- They:
+    - prevent invalid data
+    - maintain relationships
+    - improve consistency
+    - help join tables
+
 #### Primary key VS Foreign key
 
 | Feature             | Primary Key              | Foreign Key           |
@@ -101,3 +109,9 @@ CREATE TABLE Courses (
 | NULL Allowed?       | ❌ No                     | ✅ Usually yes         |
 | Number per Table    | Usually one PK           | Multiple FKs possible |
 | Exists In           | Parent table             | Child table           |
+
+
+
+<img width="1174" height="502" alt="image" src="https://github.com/user-attachments/assets/2314f968-8859-4da8-82df-6ab281fdf4f7" />
+
+<img width="1092" height="494" alt="image" src="https://github.com/user-attachments/assets/d6000d37-c574-4de8-9da4-ae82f5cfdec2" />
