@@ -40,7 +40,6 @@
 
 - This is the program that you write in Java.
 - The application wants to reads or store data, but doesn't know how to communicate with a database.
-- 
 
 ### 2. JDBC API Layer
 
