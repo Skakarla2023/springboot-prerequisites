@@ -54,7 +54,8 @@
 
 ### 4. JDBC Driver Layer
 
-- A JDBC driver is software supplied for a specific database. It converts JDBC calls into commands that the target database understands.
+- A JDBC driver is software supplied for a specific database.
+- It converts JDBC calls into commands that the target database understands.
 - Translates JDBC requests into database-specific communication.
 
 ### 5. Database layer
