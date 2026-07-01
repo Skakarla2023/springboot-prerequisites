@@ -26,3 +26,41 @@
 1. Makes problems lengthy.
 2. Increases development time.
 3. Same code is repeated everywhere.
+
+
+### 2. Manual Resource Management
+
+- JDBC does not automatically close database resources.
+- The programmer must manually close:
+  - Connection
+  - Statement
+  - PreparedStatement
+  - ResultSet
+ 
+- If resources are not closed properly, memory leaks can occur.
+
+
+**Why is it a Problem?**
+
+- Memory leaks happen.
+- Connection leaks happen.
+- Application crashes under heavy load.
+
+
+### 3. Poor Exception Handling
+
+- JDBC throws checked exceptions like: SQLException.
+- Developer must handle every possible daabase error manually.
+- Sometimes multiple nested try-catch blocks are required.
+
+
+**Why is it a Problem?**
+
+- Complex error handling.
+- Difficult debugging.
+
+### 4. Database Dependency
+
+- Different databases use different SQl syntax.
+- Although SQL is standardised, many commands differ between databases.
+- A JDBC application written for one database may require changes to work with another.
