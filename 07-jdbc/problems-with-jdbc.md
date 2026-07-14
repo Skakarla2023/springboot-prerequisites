@@ -64,3 +64,4 @@
 - Different databases use different SQl syntax.
 - Although SQL is standardised, many commands differ between databases.
 - A JDBC application written for one database may require changes to work with another.
+- Database specific functions or comands may differ.
