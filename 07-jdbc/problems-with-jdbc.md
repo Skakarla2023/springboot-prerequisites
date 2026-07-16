@@ -65,3 +65,17 @@
 - Although SQL is standardised, many commands differ between databases.
 - A JDBC application written for one database may require changes to work with another.
 - Database specific functions or comands may differ.
+
+
+### 5. Manual Mapping Between Database and Java Objects
+
+- JDBC returns query results as a ResultSet.
+- Developers must manually extract each column and assign it to Java object fields.
+- Every column has to be mapped using methods like:
+  - `getInt()`
+  - `getString()`
+  - `getDouble()`
+  - `getDate()`
+- This mapping code must be written for every query.
+
+
