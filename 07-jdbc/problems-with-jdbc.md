@@ -79,3 +79,13 @@
 - This mapping code must be written for every query.
 
 
+### 6. No Object-Oriented Support
+
+- Relational databases store data in tables.
+- Java applications work with objects.
+- JDBC deals only with SQL and `ResultSet` objects.
+- It does not automatically convert database records into Java objects.
+
+
+
+
