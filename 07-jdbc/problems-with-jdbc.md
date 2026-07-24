@@ -88,4 +88,17 @@
 
 
 
+### 7. Difficult Transaction Management
 
+- In transactions multile database operations are executed as a single unit.
+- In JDBC, the developer has to manually:
+  - Disable auto-commit.
+  - Save the transaction automatically.
+  - Rollback the transaction if any error occurs.
+- Proper transaction handling requires additional code.
+
+
+ ### 8. Difficult to Manage large applications
+
+ - As the application size increases, code becomes scattered in multiple classes.
+ - 
