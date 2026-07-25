@@ -101,4 +101,29 @@
  ### 8. Difficult to Manage large applications
 
  - As the application size increases, code becomes scattered in multiple classes.
- - 
+ - SQL queries are often written directly inside Java code.
+ - Any database change requires updating many files.
+
+
+### 9. No Built-in Connection Pooling
+
+- Opening a database connection requires a lot of time and computer power.
+- JDBC does not save or reuse this connection for you.
+- Every single request you make creates a new connection unless you use a special tool or library.
+- It slows down the performance and increases the database load.
+
+
+
+### 10. Security Risks
+
+- If SQL queries are created using string concatenation, applications become vulnerable to SQLInjection.
+- Developers must use PreparedStatement correctly to avoid these vulnerabilities.
+- It may lead to unauthorized access to data, and also data modification or deletion by attackers.
+
+### 11. Low Productivity
+
+- JDBC requires developers to write a large amount of code even for simple database operations.
+- CRUD (Create, Read, Update, Delete) operations involve repetitive coding.
+- More time is spent on database handling than business logic.
+
+
