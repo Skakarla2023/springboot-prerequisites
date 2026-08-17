@@ -1,4 +1,4 @@
-## Maven
+## Maven 
 
 - It is an open-source build automation and project management tool used for Java Projects.
 - It helps developers test, manage, develop, build and deploy applications automatically.
@@ -69,6 +69,3 @@ Maven solved these problems by introducing:
 - It is an external code used by your application instead of writing everything yourself.
 - Without Maven, the developer must search for the particular dependencies online, download them, place them in you project and this process is repeated whenever versions change.
 - With Maven, we simply specify the required dependecy, Maven automatically downloads it, downloads its required libraries, adds them to the project and updates them whenever needed.
-
-
-
