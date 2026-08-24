@@ -6,3 +6,6 @@
 - Instead of downloading and handling JAR files by yourself, you just declare what you want in `pom.xml` and Maven automates the rest.
 - 
 - 
+
+modelVersion : It defines the version of pom model specification, usually 4.0.0.
+pom model specification : it is the blueprint or schema that defines the structural format of a `pom.xml` file.
